@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gamename name="Properly formatted game name">
+
+    <!-- RACES -->
+    <race name="race name">
+
+        <!-- STRUCTURES -->
+        <structure name="structure name">
+
+            <!-- Shield and hitpoints will be moved to a structure similar to the cost structure.
+                 Use these for now -->
+            <shield>int</shield>
+            <hitpoints>int</hitpoints>
+            <prodTime>int</prodTime>
+            <energy>int</energy>
+
+            <!-- Requirement listings. Add as many requirements as needed.
+                 Types supported for 1.0: NONE, UNIT, STRUCTURE, UPGRADE.
+                 Please note that the value of the 'name' tag needs to
+                 be a valid entity within the document, meaning it has to match
+                 the name of whatever type it is.
+                 Leave this tag out if there are no requirements -->
+            <requirement>
+                <name>string</name>
+                <type>ReqType ENUM. Types are listed in the comment block above</type>
+            </requirement>
+
+            <!-- Cost listings. Add as many cost types as needed -->
+            <cost>
+                <amount>int</amount>
+                <type>string</type>
+            </cost>
+        </structure>
+
+        <!-- UNITS -->
+        <unit name="unit name">
+
+            <!-- Shield and hitpoints will be moved to a structure similar to the cost structure.
+                 Use these for now -->
+            <shield>int</shield>
+            <hitpoints>int</hitpoints>
+            <damage>int</damage>
+            <prodTime>int</prodTime>
+
+            <!-- Requirement listings. Add as many requirements as needed.
+                 Types supported for 1.0: NONE, UNIT, STRUCTURE, UPGRADE.
+                 Please note that the value of the 'name' tag needs to
+                 be a valid entity within the document, meaning it has to match
+                 the name of whatever type it is.
+                 Leave this tag out if there are no requirements -->
+            <requirement>
+                <name>string</name>
+                <type>ReqType ENUM. Types are listed in the comment block above</type>
+            </requirement>
+
+            <!-- Cost listings. Add as many cost types as needed -->
+            <cost>
+                <amount>int</amount>
+                <type>string</type>
+            </cost>
+        </unit>
+
+        <!-- UPGRADES -->
+        <!-- For your own sanity, list these upgrades in some kind of order that makes sense to you.
+             The order doesn't matter to the library, but a document like this can
+             quickly get out of hand :D -->
+        <upgrade name="upgrade name">
+
+            <!-- Holds the cooldown in seconds -->
+            <cooldown>float</cooldown>
+
+            <!-- Usage cost listing. adheres to the same rules as regular Cost.
+                 Leave this tag out if there are no requirements -->
+            <useCost>
+                <amount>int</amount>
+                <type>string</type>
+            </useCost>
+
+            <!-- Holds the name of the thing it upgrades, as well as it's type.
+                 This must be a ReqType ENUM.
+                 Types supported for 1.0: NONE, UNIT, STRUCTURE, UPGRADE. -->
+            <upgrades>
+                <name>string</name>
+                <type>ReqType ENUM. Types are listen in the comment block above</type>
+            </upgrades>
+
+            <!-- Cost listings. Add as many cost types as needed -->
+            <cost>
+                <amount>int</amount>
+                <type>string</type>
+            </cost>
+
+            <!-- Requirement listings. Add as many requirements as needed.
+                 Types supported for 1.0: NONE, UNIT, STRUCTURE, UPGRADE.
+                 Please note that the value of the 'name' tag needs to
+                 be a valid entity within the document, meaning it has to match
+                 the name of whatever type it is.
+                 Leave this tag out if there are no requirements -->
+            <requirement>
+                <name>string</name>
+                <type>ReqType ENUM. Types are listed in the comment block above</type>
+            </requirement>
+
+            <description>string</description>
+        </upgrade>
+    </race>
+</gamename>

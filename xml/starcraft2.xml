@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<starcraft2 name="Starcraft 2">
+    <race name="Protoss">
+        <!-- Basic Structures -->
+        <structure name="Nexus">
+            <shield>1000</shield>
+            <hitpoints>1000</hitpoints>
+            <prodTime>100</prodTime>
+            <energy>200</energy>
+
+            <cost>
+                <amount>400</amount>
+                <type>Minerals</type>
+            </cost>
+        </structure>
+        <structure name="Pylon">
+            <shield>200</shield>
+            <hitpoints>200</hitpoints>
+            <prodTime>25</prodTime>
+
+            <cost>
+                <amount>100</amount>
+                <type>Minerals</type>
+            </cost>
+        </structure>
+        <structure name="Assimilator">
+            <shield>450</shield>
+            <hitpoints>450</hitpoints>
+            <prodTime>30</prodTime>
+            <cost>
+                <amount>75</amount>
+                <type>Minerals</type>
+            </cost>
+        </structure>
+        <structure name="Forge">
+            <shield>400</shield>
+            <hitpoints>400</hitpoints>
+            <prodTime>45</prodTime>
+            <requirement>
+                <name>Nexus</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>150</amount>
+                <type>Minerals</type>
+            </cost>
+        </structure>
+        <structure name="Gateway">
+            <shield>500</shield>
+            <hitpoints>500</hitpoints>
+            <prodTime>65</prodTime>
+            <requirement>
+                <name>Nexus</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>150</amount>
+                <type>Minerals</type>
+            </cost>
+        </structure>
+        <structure name="Cybernetics Core">
+            <shield>550</shield>
+            <hitpoints>550</hitpoints>
+            <prodTime>50</prodTime>
+            <requirement>
+                <name>Gateway</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>150</amount>
+                <type>Minerals</type>
+            </cost>
+        </structure>
+        <structure name="Photon Cannon">
+            <shield>150</shield>
+            <hitpoints>150</hitpoints>
+            <prodTime>40</prodTime>
+            <requirement>
+                <name>Forge</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>150</amount>
+                <type>Minerals</type>
+            </cost>
+        </structure>
+        <!-- Advanced Structures -->
+        <structure name="Twilight Council">
+            <shield>500</shield>
+            <hitpoints>500</hitpoints>
+            <prodTime>50</prodTime>
+            <requirement>
+                <name>Cybernetics Core</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>150</amount>
+                <type>Minerals</type>
+            </cost>
+            <cost>
+                <amount>100</amount>
+                <type>Gas</type>
+            </cost>
+        </structure>
+        <structure name="Stargate">
+            <shield>600</shield>
+            <hitpoints>600</hitpoints>
+            <prodTime>60</prodTime>
+            <requirement>
+                <name>Cybernetics Core</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>150</amount>
+                <type>Minerals</type>
+            </cost>
+            <cost>
+                <amount>150</amount>
+                <type>Gas</type>
+            </cost>
+        </structure>
+        <structure name="Robotics Facility">
+            <shield>450</shield>
+            <hitpoints>450</hitpoints>
+            <prodTime>65</prodTime>
+            <requirement>
+                <name>Cybernetics Core</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>200</amount>
+                <type>Minerals</type>
+            </cost>
+            <cost>
+                <amount>100</amount>
+                <type>Gas</type>
+            </cost>
+        </structure>
+        <structure name="Templar Archives">
+            <shield>500</shield>
+            <hitpoints>500</hitpoints>
+            <prodTime>50</prodTime>
+            <requirement>
+                <name>Twilight Council</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>150</amount>
+                <type>Minerals</type>
+            </cost>
+            <cost>
+                <amount>200</amount>
+                <type>Gas</type>
+            </cost>
+        </structure>
+        <structure name="Dark Shrine">
+            <shield>500</shield>
+            <hitpoints>500</hitpoints>
+            <prodTime>100</prodTime>
+            <requirement>
+                <name>Twilight Council</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>150</amount>
+                <type>Minerals</type>
+            </cost>
+            <cost>
+                <amount>150</amount>
+                <type>Gas</type>
+            </cost>
+        </structure>
+        <structure name="Fleet Beacon">
+            <shield>500</shield>
+            <hitpoints>500</hitpoints>
+            <prodTime>60</prodTime>
+            <requirement>
+                <name>Stargate</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>300</amount>
+                <type>Minerals</type>
+            </cost>
+            <cost>
+                <amount>200</amount>
+                <type>Gas</type>
+            </cost>
+        </structure>
+        <structure name="Robotics Bay">
+            <shield>500</shield>
+            <hitpoints>500</hitpoints>
+            <prodTime>65</prodTime>
+            <requirement>
+                <name>Robotics Facility</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>200</amount>
+                <type>Minerals</type>
+            </cost>
+            <cost>
+                <amount>200</amount>
+                <type>Gas</type>
+            </cost>
+        </structure>
+        <!-- Units -->
+        <unit name="probe">
+            <shield>20</shield>
+            <hitpoints>20</hitpoints>
+            <prodTime>17</prodTime>
+            <requirement>
+                <name>Nexus</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>50</amount>
+                <type>Minerals</type>
+            </cost>
+        </unit>
+        <unit name="Zealot">
+            <shield>50</shield>
+            <hitpoints>100</hitpoints>
+            <prodTime>38</prodTime>
+            <requirement>
+                <name>Gateway</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <cost>
+                <amount>100</amount>
+                <type>Minerals</type>
+            </cost>
+        </unit>
+        <!-- Upgrades -->
+        <upgrade name="Charge">
+            <cooldown>10</cooldown>
+            <useCost>null</useCost>
+            <requirement>
+                <name>Twilight Council</name>
+                <type>STRUCTURE</type>
+            </requirement>
+            <description>empty</description>
+        </upgrade>
+    </race>
+    <race name="Terran">
+    </race>
+    <race name="Zerg">
+    </race>
+</starcraft2>
